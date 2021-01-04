@@ -8,7 +8,11 @@ import {Component, OnInit} from '@angular/core';
 export class EventBindingComponent implements OnInit {
 
   buttonName = "My Button"
+  inputName = "Benhur";
   i = 0;
+  selectDisable = false;
+  selectedOption = 1;
+
   constructor() { }
   spinnerMode = "determinate";
   btnEnable = true;
@@ -26,6 +30,15 @@ export class EventBindingComponent implements OnInit {
       this.btnEnable = true;
       this.spinnerMode = "determinate";
     }, 3000)
+  }
+
+  cbChange({checked}) {
+    console.log(checked);
+    this.selectDisable = checked;
+  }
+  selectionChange({value}) {
+    console.log(value);
+    this.selectedOption = value
   }
 
 }

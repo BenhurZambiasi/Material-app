@@ -8,18 +8,25 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatCheckboxModule} from '@angular/material/checkbox'
 
 
 import {StringInterpolationComponent} from './string-interpolation/string-interpolation.component';
 import {PropertyBindingComponent} from './property-binding/property-binding.component';
-import {EventBindingComponent} from './event-binding/event-binding.component'
+import {EventBindingComponent} from './event-binding/event-binding.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-binding.component';
+
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,11 @@ import {EventBindingComponent} from './event-binding/event-binding.component'
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
