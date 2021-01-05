@@ -21,6 +21,7 @@ import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-bi
 import {FormsModule} from '@angular/forms';
 import {NgStyleComponent} from './ng-style/ng-style.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatRadioModule} from '@angular/material/radio';
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
