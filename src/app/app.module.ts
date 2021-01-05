@@ -19,6 +19,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-binding.component';
 
 import {FormsModule} from '@angular/forms';
+import {NgStyleComponent} from './ng-style/ng-style.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import {FormsModule} from '@angular/forms';
     StringInterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import {FormsModule} from '@angular/forms';
     MatSelectModule,
     MatFormFieldModule,
     FormsModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
