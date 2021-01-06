@@ -1,0 +1,19 @@
+mat-card {
+  margin: 40px;
+  background: #ddd;
+  width: 50%;
+}
+
+section {
+  width: 80%;
+}
+
+mat-form-field {
+  display: inline;
+  flex-direction: column;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+}
